@@ -5,7 +5,6 @@
 
 node_modules/
 app/
-dist/
 gulpfile.js
 package-lock.json
 package.json
