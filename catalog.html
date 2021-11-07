@@ -13,7 +13,7 @@
 <body>
   <header class="header">
     <div class="header__top">
-      <a href="#" class="header__top-logo">
+      <a href="index.html" class="header__top-logo">
         <img src="images/logo.svg" alt="">
       </a>
     </div>
@@ -29,7 +29,7 @@
             <li><a href="#">АКСЕССУАРЫ</a></li>
             <li><a href="#">ОФРМЛЕНИЕ</a></li>
             <li><a href="#">КОРПОРАТИВНЫЕ ЗАКАЗЫ</a></li>
-            <li><a href="catalog.html">ВЕСЬ КАТАЛОГ</a></li>
+            <li><a class="link__active" href="#">ВЕСЬ КАТАЛОГ</a></li>
             <li><a href="#">О НАС</a></li>
             <li><a href="#">КОНТАКТЫ</a></li>
           </ul>
@@ -118,7 +118,7 @@
         <li><a href="#">АКСЕССУАРЫ</a></li>
         <li><a href="#">ОФРМЛЕНИЕ</a></li>
         <li><a href="#">КОРПОРАТИВНЫЕ ЗАКАЗЫ</a></li>
-        <li><a href="catalog.html">ВЕСЬ КАТАЛОГ</a></li>
+        <li><a href="#">ВЕСЬ КАТАЛОГ</a></li>
         <li><a href="#">О НАС</a></li>
         <li><a href="#">КОНТАКТЫ</a></li>
       </ul>
@@ -142,123 +142,81 @@
     </div>
   </header>
 
-  <section class="main">
+  <section class="catalog">
     <div class="container">
-      <div class="main__bg"
-        style="background-image: url(https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg)">
-        <button class="main__btn">Заказать букет</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="bestsellers sectioncards">
-    <div class="container">
-      <div class="bestsellers__title sectioncards__title">BESTSELLER</div>
-      <div class="bestsellers__title-mobile">Цветы, подарки, декор</div>
-      <div class="bestsellers__text-mobile">
-        Уникальный выбор цветов в наличии и под заказ, цветочный салон в центре Москвы и доставка по всему городу.
-        Корпоративные заказы, подарки, оформление мероприятий и жилых помещений.
-      </div>
-      <div class="bestsellers__cards-slider sectioncards__cards">
-        <div class="bestsellers__cards-item sectioncards__cards-item">
+      <div class="catalog__title sectioncards__title">КАТАЛОГ</div>
+      <div class="catalog__wrapper sectioncards__cards">
+        <div class="catalog__wrapper-card sectioncards__cards-item">
           <div class="cards__item-img">
             <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
           </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
+          <div class="cards__item-title name">БУКЕТЫ</div>
+          <div class="cards__item-part">FP BOX</div>
+          <div class="cards__item-fromprice">ОТ 8 000 РУБ.</div>
           <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
         </div>
-        <div class="bestsellers__cards-item sectioncards__cards-item">
+        <div class="catalog__wrapper-card sectioncards__cards-item">
           <div class="cards__item-img">
             <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
           </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
+          <div class="cards__item-title name">БУКЕТЫ</div>
+          <div class="cards__item-part">Цветы в коробке</div>
+          <div class="cards__item-fromprice">ОТ 8 000 РУБ.</div>
           <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
         </div>
-        <div class="bestsellers__cards-item sectioncards__cards-item">
+        <div class="catalog__wrapper-card sectioncards__cards-item">
           <div class="cards__item-img">
             <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
           </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
+          <div class="cards__item-title name">БУКЕТЫ</div>
+          <div class="cards__item-part">Букеты</div>
+          <div class="cards__item-fromprice">ОТ 8 000 РУБ.</div>
           <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
         </div>
-        <div class="bestsellers__cards-item sectioncards__cards-item">
+        <div class="catalog__wrapper-card sectioncards__cards-item">
           <div class="cards__item-img">
             <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
           </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
+          <div class="cards__item-title name">БУКЕТЫ</div>
+          <div class="cards__item-part">Bestsellers</div>
+          <div class="cards__item-fromprice">ОТ 8 000 РУБ.</div>
           <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
         </div>
-      </div>
-      <div class="bestsellers__cards sectioncards__cards">
-        <div class="bestsellers__cards-item sectioncards__cards-item">
+        <div class="catalog__wrapper-card sectioncards__cards-item">
           <div class="cards__item-img">
             <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
           </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
+          <div class="cards__item-title name">БУКЕТЫ</div>
+          <div class="cards__item-part">Корзины</div>
+          <div class="cards__item-fromprice">ОТ 8 000 РУБ.</div>
           <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
         </div>
-        <div class="bestsellers__cards-item sectioncards__cards-item">
+        <div class="catalog__wrapper-card sectioncards__cards-item">
           <div class="cards__item-img">
             <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
           </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
+          <div class="cards__item-title name">БУКЕТЫ</div>
+          <div class="cards__item-part">Аксессуары</div>
+          <div class="cards__item-fromprice">ОТ 8 000 РУБ.</div>
           <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
         </div>
-        <div class="bestsellers__cards-item sectioncards__cards-item">
+        <div class="catalog__wrapper-card sectioncards__cards-item">
           <div class="cards__item-img">
             <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
           </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
+          <div class="cards__item-title name">БУКЕТЫ</div>
+          <div class="cards__item-part">Подарки</div>
+          <div class="cards__item-fromprice">ОТ 8 000 РУБ.</div>
           <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
         </div>
-        <div class="bestsellers__cards-item sectioncards__cards-item">
+        <div class="catalog__wrapper-card sectioncards__cards-item">
           <div class="cards__item-img">
             <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
           </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
+          <div class="cards__item-title name">БУКЕТЫ</div>
+          <div class="cards__item-part">Подарочные сертификаты</div>
+          <div class="cards__item-fromprice">ОТ 8 000 РУБ.</div>
           <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
-        </div>
-      </div>
-      <a class="bestsellers__btn sectioncards__btn" href="catalog.html">ПЕРЕЙТИ В КАТАЛОГ</a>
-    </div>
-  </section>
-
-  <section class="flowersinbox">
-    <div class="container">
-      <div class="flowersinbox__wrapper">
-        <div class="flowersinbox__wrapper-img">
-          <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
-        </div>
-        <div class="flowersinbox__wrapper-description">
-          <div class="flowersinbox__description-name name">
-            ЦВЕТЫ В КОРОБКЕ
-          </div>
-          <div class="flowersinbox__description-title">
-            All you need is love and Flower Power
-          </div>
-          <div class="flowersinbox__description-text">
-            Уникальные коробки с цветами, которые не только порадуют &#x0020 наполнением, но и подарят незабываемый опыт
-            и настроение
-          </div>
-          <div>
-            <button class="flowersinbox__description-btn">Заказать цветы в коробке</button>
-          </div>
         </div>
       </div>
     </div>
@@ -266,7 +224,7 @@
 
   <section class="adress">
     <div class="container">
-      <div class="adress__wrapper">
+      <div class="adress__wrapper catalog__adress">
         <div class="adress__delivery">
           <div class="adress__delivery-img">
             <img src="images/car.svg" alt="">
@@ -360,109 +318,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="onlineshow">
-    <div class="container">
-      <div class="onlineshow__wrapper"
-        style="background-image: url(https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg)">
-        <div class="onlineshow__content">
-          <div class="onlineshow__content-name name">
-            ОНЛАЙН ВИТРИНА
-          </div>
-          <div class="onlineshow__content-title">
-            Каждый день в наличии готовые свежие букеты
-          </div>
-          <div class="onlineshow__content-text">
-            Свяжитесь с нами в <a href="#">WhatsApp</a> чтобы узнать о готовых
-            букетах и заказать быструю доставку или забрать букет из салона
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="boxwithflowers sectioncards">
-    <div class="container">
-      <div class="boxwithflowers__title sectioncards__title">КОРОБКИ С ЦВЕТАМИ</div>
-      <div class="boxwithflowers__cards-slider sectioncards__cards">
-        <div class="boxwithflowers__cards-item sectioncards__cards-item">
-          <div class="cards__item-img">
-            <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
-          </div>
-          <div class="cards__item-title name">ПРАЗДНИЧНЫЙ БУКЕТ</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
-          <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
-        </div>
-        <div class="boxwithflowers__cards-item sectioncards__cards-item">
-          <div class="cards__item-img">
-            <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
-          </div>
-          <div class="cards__item-title name">ПРАЗДНИЧНЫЙ БУКЕТ</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
-          <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
-        </div>
-        <div class="boxwithflowers__cards-item sectioncards__cards-item">
-          <div class="cards__item-img">
-            <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
-          </div>
-          <div class="cards__item-title name">ПРАЗДНИЧНЫЙ БУКЕТ</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
-          <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
-        </div>
-        <div class="boxwithflowers__cards-item sectioncards__cards-item">
-          <div class="cards__item-img">
-            <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
-          </div>
-          <div class="cards__item-title name">ПРАЗДНИЧНЫЙ БУКЕТ</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
-          <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
-        </div>
-      </div>
-      <div class="bestsellers__cards sectioncards__cards">
-        <div class="bestsellers__cards-item sectioncards__cards-item">
-          <div class="cards__item-img">
-            <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
-          </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
-          <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
-        </div>
-        <div class="bestsellers__cards-item sectioncards__cards-item">
-          <div class="cards__item-img">
-            <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
-          </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
-          <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
-        </div>
-        <div class="bestsellers__cards-item sectioncards__cards-item">
-          <div class="cards__item-img">
-            <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
-          </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
-          <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
-        </div>
-        <div class="bestsellers__cards-item sectioncards__cards-item">
-          <div class="cards__item-img">
-            <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
-          </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
-          <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
-        </div>
-      </div>
-      <a class="onlineshow__btn sectioncards__btn" href="catalog.html">В КАТАЛОГ</a>
     </div>
   </section>
 

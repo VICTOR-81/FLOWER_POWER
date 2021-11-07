@@ -8,4 +8,5 @@ app/
 gulpfile.js
 package-lock.json
 package.json
+.jshintrc
 
