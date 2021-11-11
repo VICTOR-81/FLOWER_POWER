@@ -24,12 +24,12 @@
             <li><a>МЕНЮ</a></li>
             <li><a href="#">FP BOX</a></li>
             <li><a href="#">ЦВЕТЫ В КОРОБКЕ</a></li>
-            <li><a href="#">БУКЕТЫ</a></li>
+            <li><a class="link__active" href="#">БУКЕТЫ</a></li>
             <li><a href="#">КОРЗИНЫ</a></li>
             <li><a href="#">АКСЕССУАРЫ</a></li>
             <li><a href="#">ОФРМЛЕНИЕ</a></li>
             <li><a href="#">КОРПОРАТИВНЫЕ ЗАКАЗЫ</a></li>
-            <li><a class="link__active" href="#">ВЕСЬ КАТАЛОГ</a></li>
+            <li><a href="#">ВЕСЬ КАТАЛОГ</a></li>
             <li><a href="#">О НАС</a></li>
             <li><a href="#">КОНТАКТЫ</a></li>
           </ul>
@@ -142,102 +142,257 @@
     </div>
   </header>
 
-  <section class="bouquets">
-    <div class="container-fluid">
-      <div class="catalog__menu">
-        КАТАЛОГ / БУКЕТЫ / ВСЕ БУКЕТЫ
-        <div class="catalog__menu-arrow">
-          <img src="images/down-arrow.svg" alt="">
+  <div class="allbouquets__wrapper">
+    <section class="filter">
+      <div class="container-fluid">
+        <div class="catalog__menu">
+          КАТАЛОГ / БУКЕТЫ / ВСЕ БУКЕТЫ
+          <div class="catalog__menu-arrow">
+            <img src="images/down-arrow.svg" alt="">
+          </div>
+        </div>
+        <ul class="catalog__menu-drop">
+          <li><a href="#">FP BOX</a></li>
+          <li><a href="#">БУКЕТЫ</a>
+            <ul>
+              <li><a href="#">ВСЕ БУКЕТЫ</a></li>
+              <li><a href="#">БУКЕТ НЕВЕСТЫ</a></li>
+              <li><a href="#">МУЖСКИЕ</a></li>
+              <li><a href="#">ДЕТСКИЕ</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ЦВЕТЫ В КОРОБКЕ</a></li>
+          <li><a href="#">КОРЗИНЫ</a></li>
+          <li><a href="#">АКСЕССУАРЫ</a></li>
+          <li><a href="#">ОНЛАЙН ВИТРИНА</a></li>
+        </ul>
+        <div class="catalog__filter-icon">
+          <img src="images/filter.svg" alt="">
+        </div>
+        <div class="catalog__filter">
+          <div class="catalog__filter-title">ФИЛЬТРЫ:</div>
+          <label for="">
+            <input type="checkbox" name="" id="">
+            Только в наличии
+          </label>
+          <label for="">
+            <input type="checkbox">
+            Монобукеты
+          </label>
+          <label for="">
+            <input type="checkbox">
+            Однотонные
+          </label>
+          <label for="">
+            Сортировка:
+            <select name="" id="">
+              <option value="value1">Сначала дорогие</option>
+              <option value="value2">Средняя цена</option>
+              <option value="value3">Дешевые</option>
+            </select>
+          </label>
+          <button class="catalog__filter-btn catalog__filter-btn__reset">СБРОСИТЬ ФИЛЬТРЫ</button>
+          <button class="catalog__filter-btn catalog__filter-btn__use">ПРИМЕНИТЬ</button>
+          <div class="catalog__filter-color">ЦВЕТ:</div>
+          <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Любой</label>
+          <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Белый</label>
+          <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Желтый</label>
+          <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Оранжевый</label>
+          <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Розовый</label>
+          <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Красный</label>
+          <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Зеленый</label>
+          <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Голубой</label>
+          <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Синий</label>
+          <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Сиреневый</label>
+          <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Фиолетовый</label>
         </div>
       </div>
-      <ul class="catalog__menu-drop">
-        <li><a href="#">FP BOX</a></li>
-        <li><a href="#">БУКЕТЫ</a>
+    </section>
+
+    <section class="bouquets">
+      <div class="container">
+        <div class="bouquets__wrapper">
+          <div class="bouquets__card sectioncards__cards">
+            <div class="bouquets__card-title">КАТАЛОГ / БУКЕТЫ / ВСЕ БУКЕТЫ</div>
+            <div class="bouquets__cards-item sectioncards__cards-item">
+              <div class="cards__item-img">
+                <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
+              </div>
+              <div class="cards__item-title name">BESTSELLER</div>
+              <div class="cards__item-price">14 500 руб.</div>
+              <div class="cards__item-number">БУКЕТ N076</div>
+              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+            </div>
+            <div class="bouquets__cards-item sectioncards__cards-item">
+              <div class="cards__item-img">
+                <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
+              </div>
+              <div class="cards__item-title name">BESTSELLER</div>
+              <div class="cards__item-price">14 500 руб.</div>
+              <div class="cards__item-number">БУКЕТ N076</div>
+              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+            </div>
+            <div class="bouquets__cards-item sectioncards__cards-item">
+              <div class="cards__item-img">
+                <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
+              </div>
+              <div class="cards__item-title name">BESTSELLER</div>
+              <div class="cards__item-price">14 500 руб.</div>
+              <div class="cards__item-number">БУКЕТ N076</div>
+              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+            </div>
+          </div>
+          <div class="bouquets__card sectioncards__cards">
+            <div class="bouquets__cards-item sectioncards__cards-item">
+              <div class="cards__item-img">
+                <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
+              </div>
+              <div class="cards__item-title name">BESTSELLER</div>
+              <div class="cards__item-price">24 500 руб.</div>
+              <div class="cards__item-number">БУКЕТ N076</div>
+              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+            </div>
+            <div class="bouquets__cards-item sectioncards__cards-item">
+              <div class="cards__item-img">
+                <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
+              </div>
+              <div class="cards__item-title name">BESTSELLER</div>
+              <div class="cards__item-price">24 500 руб.</div>
+              <div class="cards__item-number">БУКЕТ N076</div>
+              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+            </div>
+            <div class="bouquets__cards-item sectioncards__cards-item">
+              <div class="cards__item-img">
+                <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
+              </div>
+              <div class="cards__item-title name">BESTSELLER</div>
+              <div class="cards__item-price">24 500 руб.</div>
+              <div class="cards__item-number">БУКЕТ N076</div>
+              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+            </div>
+          </div>
+          <div class="bouquets__card sectioncards__cards">
+            <div class="bouquets__cards-item sectioncards__cards-item">
+              <div class="cards__item-img">
+                <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
+              </div>
+              <div class="cards__item-title name">BESTSELLER</div>
+              <div class="cards__item-price">44 000 руб.</div>
+              <div class="cards__item-number">БУКЕТ N076</div>
+              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+            </div>
+            <div class="bouquets__cards-item sectioncards__cards-item">
+              <div class="cards__item-img">
+                <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
+              </div>
+              <div class="cards__item-title name">BESTSELLER</div>
+              <div class="cards__item-price">44 000 руб.</div>
+              <div class="cards__item-number">БУКЕТ N076</div>
+              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+            </div>
+            <div class="bouquets__cards-item sectioncards__cards-item">
+              <div class="cards__item-img">
+                <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
+              </div>
+              <div class="cards__item-title name">BESTSELLER</div>
+              <div class="cards__item-price">44 000 руб.</div>
+              <div class="cards__item-number">БУКЕТ N076</div>
+              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="pagination">
+          <div class="pagination__arrow"> < </div>
+              <div class="pagination__numbers">
+                <div class="pagination__number">1</div>
+                <div class="pagination__dots">...</div>
+              </div>
+              <div class="pagination__numbers">
+                <div class="pagination__number">2</div>
+                <div class="pagination__dots">...</div>
+              </div>
+              <div class="pagination__numbers">
+                <div class="pagination__number">3</div>
+                <div class="pagination__dots">...</div>
+              </div>
+              <div class="pagination__numbers">
+                <div class="pagination__number">4</div>
+                <div class="pagination__dots">...</div>
+              </div>
+              <div class="pagination__numbers">
+                <div class="pagination__number">5</div>
+                <div class="pagination__dots">...</div>
+              </div>
+              <div class="pagination__numbers">
+                <div class="pagination__number">6</div>
+                <div class="pagination__dots">...</div>
+              </div>
+              <div class="pagination__numbers">
+                <div class="pagination__number">7</div>
+                <div class="pagination__dots">...</div>
+              </div>
+              <div class="pagination__numbers">
+                <div class="pagination__number">8</div>
+                <div class="pagination__dots">...</div>
+              </div>
+              <div class="pagination__numbers">
+                <div class="pagination__number">9</div>
+                <div class="pagination__dots">...</div>
+              </div>
+              <div class="pagination__numbers">
+                <div class="pagination__number">10</div>
+                <div class="pagination__dots">...</div>
+              </div>
+              <div class="pagination__numbers">
+                <div class="pagination__number">11</div>
+                <div class="pagination__dots">...</div>
+              </div>
+              <div class="pagination__numbers">
+                <div class="pagination__number">12</div>
+                <div class="pagination__dots">...</div>
+              </div>
+              <div class="pagination__numbers">
+                <div class="pagination__number">13</div>
+                <div class="pagination__dots">...</div>
+              </div>
+              <div class="pagination__arrow"> > </div>
+          </div>
+        </div> -->
+        <div class="pagination">
+          <div class="pagination__arrow-left hide">&lt</div>
           <ul>
-            <li><a href="#">ВСЕ БУКЕТЫ</a></li>
-            <li><a href="#">БУКЕТ НЕВЕСТЫ</a></li>
-            <li><a href="#">МУЖСКИЕ</a></li>
-            <li><a href="#">ДЕТСКИЕ</a></li>
+            <li class="pagination__number"><a class="active" href="#">1</a></li>
+            <li class="pagination__dots hide">...</li>
+            <li class="pagination__number"><a href="#">2</a></li>
+            <li class="pagination__dots hide">...</li>
+            <li class="pagination__number"><a href="#">3</a></li>
+            <li class="pagination__dots hide">...</li>
+            <li class="pagination__number hide"><a href="#">4</a></li>
+            <li class="pagination__dots hide">...</li>
+            <li class="pagination__number hide"><a href="#">5</a></li>
+            <li class="pagination__dots hide">...</li>
+            <li class="pagination__number hide"><a href="#">6</a></li>
+            <li class="pagination__dots hide">...</li>
+            <li class="pagination__number hide"><a href="#">7</a></li>
+            <li class="pagination__dots hide">...</li>
+            <li class="pagination__number hide"><a href="#">8</a></li>
+            <li class="pagination__dots hide">...</li>
+            <li class="pagination__number hide"><a href="#">9</a></li>
+            <li class="pagination__dots hide">...</li>
+            <li class="pagination__number hide"><a href="#">10</a></li>
+            <li class="pagination__dots hide">...</li>
+            <li class="pagination__number hide"><a href="#">11</a></li>
+            <li class="pagination__dots hide">...</li>
+            <li class="pagination__number hide"><a href="#">12</a></li>
+            <li class="pagination__dots">...</li>
+            <li class="pagination__number"><a href="#">13</a>
+              <div class="pagination__dots hide">...</div>
+            </li>
           </ul>
-        </li>
-        <li><a href="#">ЦВЕТЫ В КОРОБКЕ</a></li>
-        <li><a href="#">КОРЗИНЫ</a></li>
-        <li><a href="#">АКСЕССУАРЫ</a></li>
-        <li><a href="#">ОНЛАЙН ВИТРИНА</a></li>
-      </ul>
-      <div class="catalog__filter-icon">
-        <img src="images/filter.svg" alt="">
-      </div>
-      <div class="catalog__filter">
-        <div class="catalog__filter-title">ФИЛЬТРЫ:</div>
-        <label for="">
-          <input type="checkbox" name="" id="">
-          Только в наличии
-        </label>
-        <label for="">
-          <input type="checkbox">
-          Монобукеты
-        </label>
-        <label for="">
-          <input type="checkbox">
-          Однотонные
-        </label>
-        <label for="">
-          Сортировка:
-          <select name="" id="">
-            <option value="value1">Сначала дорогие</option>
-            <option value="value2">Средняя цена</option>
-            <option value="value3">Дешевые</option>
-          </select>
-        </label>
-        <button class="catalog__filter-btn catalog__filter-btn__reset">СБРОСИТЬ ФИЛЬТРЫ</button>
-        <button class="catalog__filter-btn catalog__filter-btn__use">ПРИМЕНИТЬ</button>
-        <div class="catalog__filter-color">ЦВЕТ:</div>
-        <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Любой</label>
-        <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Белый</label>
-        <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Желтый</label>
-        <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Оранжевый</label>
-        <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Розовый</label>
-        <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Красный</label>
-        <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Зеленый</label>
-        <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Голубой</label>
-        <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Синий</label>
-        <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Сиреневый</label>
-        <label class="catalog__filter-color__select"><input type="radio" name="color" id="">Фиолетовый</label>
-      </div>
-    </div>
-    <div class="container">
-      <div class="bouquets__card sectioncards__cards">
-        <div class="bouquets__cards-item sectioncards__cards-item">
-          <div class="cards__item-img">
-            <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
-          </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
-          <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+          <div class="pagination__arrow-right">&gt</div>
         </div>
-        <div class="bouquets__cards-item sectioncards__cards-item">
-          <div class="cards__item-img">
-            <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
-          </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
-          <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
-        </div>
-        <div class="bouquets__cards-item sectioncards__cards-item">
-          <div class="cards__item-img">
-            <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
-          </div>
-          <div class="cards__item-title name">BESTSELLER</div>
-          <div class="cards__item-price">14 500 руб.</div>
-          <div class="cards__item-number">БУКЕТ N076</div>
-          <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <section class="adress">
     <div class="container">
