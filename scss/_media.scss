@@ -1,0 +1,402 @@
+@media (min-width: 376px) {
+ .container{
+   max-width: 768px;
+ }
+ .header{
+  &__top{
+    padding-top: 76px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #EDEDED;
+    &-logo{
+      width: 447px;
+      height: 56px;
+    }
+  }
+  &__wrapper{
+    border: none;
+  }
+  &__menu{
+    li:nth-child(10),
+    li:nth-child(11){
+    display: inline-block;
+    }
+    &-drop{
+      padding-left: 68px;
+      li:nth-child(9),
+      li:nth-child(10){
+        display: none;
+      }
+    }
+   }
+  &__search-wrapper{
+    padding: 10px 0 30px;
+    button{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &__item-search__input{
+    padding-left: 9vw;
+    padding-top: 0px;
+    padding-right: 0px;
+    margin: 0 68px;
+    background-color: #fff;
+    border: none;
+    align-items: start;
+    input{
+      width: 38.6vw;
+      border-bottom: 1px solid #707070;
+      background-color: #fff;
+    }
+  }
+  &__mobile-search{
+    display: none;
+  }
+  &__desktop-search{
+    display: block;
+    padding-top: 20px;
+  }
+  &__wrapper-searchbtn{
+    background-color: #fff;
+    margin: 0 68px;
+    padding: 46px 0 59px;
+  }
+ }
+ .container__fluid{
+   max-width: 1199px;
+ }
+ hr{
+   display: none;
+ }
+.flowersinbox{
+  &__wrapper-img{
+    height: 320px;
+  }
+}
+.allbouquets__wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.bouquets__card.sectioncards__cards{
+  justify-content: end;
+}
+.bouquets__wrapper{
+  display: flex;
+}
+.bouquets__card{
+  position: relative;
+  max-width: 344px;
+}
+.bouquets__card:nth-child(2){
+  display: none;
+}
+.bouquets__card-title{
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: -22px;
+}
+.catalog__menu{
+  display: none;
+}
+.catalog__menu-drop{
+  display: block;
+  border: none;
+  margin-bottom: 60px;
+  padding-top: 30px;
+}
+.catalog__filter-icon{
+  display: none;
+}
+.catalog__filter{
+  display: block;
+}
+.adress__map{
+  iframe{
+    width: 100vw;
+  }
+}
+.adress__contacts{
+  margin-top: 30px;
+}
+ .catalog{
+   padding-top: 60px;
+   &__wrapper-card{
+     margin-bottom: 30px;
+   }
+  }
+  .sectioncards__cards-item.catalog__wrapper-card{
+    margin: 30px auto 0px;
+  }
+  .sectioncards__cards-item{
+    margin: 30px 10px 0px;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 769px) {
+ .container{
+   max-width: 1199px;
+   padding: 0 68px;
+ }
+  .bestsellers{
+   &__title{
+     display: block;
+   }
+   &__title-mobile,
+   &__text-mobile{
+     display: none;
+   }
+   &__cards-slider{
+     display: none;
+   }
+   &__cards{
+    display: flex;
+  }
+ }
+  .flowersinbox{
+  &__wrapper{
+    flex-direction: row;
+    &-img{
+      width: 50%;
+      height: auto;
+      img{
+        height: 100%;
+      }
+    }
+    &-description{
+      width: 50%;
+    }
+  }
+ }
+ .catalog__menu-drop,
+ .catalog__filter{
+   margin-left: 68px;
+   padding-left: 0;
+ }
+ .bouquets{
+   .container{
+     padding: 0;
+   }
+ }
+ .bouquets__wrapper{
+   margin-right: 68px;
+ }
+ .bouquets__card-title{
+   left: 0;
+ }
+ .bouquets__card:nth-child(2){
+  display: flex;
+}
+  .adress{
+  .container{
+    max-width: 1199px;
+    padding: 0 68px;
+  }
+  &__wrapper{
+    flex-direction: row;
+  }
+  &__map{
+    iframe{
+      width: 720px;
+      height: 380px;
+    }
+  }
+  &__contacts{
+    max-width: 405px;
+    max-width: 100%;
+    position: absolute;
+    right: 8.3vw;
+  }
+ }
+  .adress__wrapper.catalog__adress {
+   margin-top: 90px;
+   margin-bottom: 120px;
+ }
+
+ .onlineshow{
+  margin-bottom: 120px;
+  &__wrapper{
+    padding: 70px 0;
+  }
+  &__content{
+    padding: 60px;
+  }
+  &-text{
+    max-width: 450px;
+  }
+ }
+ .boxwithflowers{
+  margin-bottom: 120px;
+  &__cards-slider{
+    display: none;
+  }
+  &__cards{
+   display: flex;
+  }
+  &__title{
+    display: block;
+  }
+ }
+ .footer{
+   &__wrapper-menu{
+     display: flex;
+   }
+ }
+ .sectioncards__cards-item{
+   margin-left: 0;
+   margin-right: 0;
+    &:nth-child(4){
+    display: none;
+  }
+ }
+ .bouquets__cards-item.sectioncards__cards-item:nth-child(4){
+    display: block;
+  }
+  .bouquets__cards-item.sectioncards__cards-item{
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .pagination{
+    display: block;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1476px;
+    padding: 0 20px;
+  }
+  .header{
+    &__wrapper{
+      justify-content: center;
+    }
+    &__menu{
+      li:nth-child(1){
+        display: none;
+      }
+      li:nth-child(2),
+      li:nth-child(3),
+      li:nth-child(4),
+      li:nth-child(5),
+      li:nth-child(6),
+      li:nth-child(7),
+      li:nth-child(8),
+      li:nth-child(9),
+      li:nth-child(10),
+      li:nth-child(11){
+      display: inline-block;
+     }
+    }
+    &__item-search__input{
+      input{
+        width: 463px;
+      }
+    }
+    &__search-wrapper{
+      max-width: 1436px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: 0 auto;
+    }
+    &__item-search__input{
+      margin: 0;
+    }
+    &__wrapper-searchbtn{
+      margin: 0;
+    }
+  }
+  .container__fluid{
+    max-width: 100%;
+    background-color: #F7F7F7;
+  }
+  .main{
+    .container{
+      padding: 0 20px;
+    }
+  }
+  .sectioncards__cards-item:nth-child(4){
+    display: block;
+  }
+
+  .flowersinbox{
+    &__wrapper{
+      max-height: 480px;
+      &-description{
+        padding-top: 117px;
+        padding-left: 68px;
+        padding-right: 100px;
+        padding-bottom: 132px;
+      }
+    } 
+    &__description{
+      &-title{
+        max-width: 100%;
+      }
+      &-text{
+        max-width: 100%;
+      }
+    }
+    .container{
+      padding: 0 20px;
+    }
+  }
+  
+  .adress{
+    &__delivery{
+      margin-left: 20px;
+    }
+    &__contacts{
+      position: relative;
+      right: 0;
+      margin-left: -101px;
+      padding: 60px 51px 60px 40px;
+    }
+    .container{
+      max-width: 1476px;
+      padding: 0 20px;
+    }
+  }
+
+
+  .onlineshow{
+    .container{
+      padding: 0 20px;
+    }
+  }
+  .sectioncards__cards-item:hover .cards__item-img img{
+    transform: scale(1.05);
+    transition: all 1s;
+  }
+  .catalog__wrapper-card{
+    &:hover .cards__item-img img{
+      cursor: pointer;
+    }
+    &:hover .cards__item-part{
+      text-decoration: underline;
+      transition: all .5s;
+      cursor: pointer;
+    }
+  }
+  .allbouquets__wrapper{
+    max-width: 1476px;
+    padding: 0 20px;
+    margin: 0 auto;
+    padding-top: 119px;
+  }
+  .bouquets__wrapper{
+    margin-right: 0px;
+  }
+  .bouquets__card-title{
+    left: 8px;
+  }
+  .bouquets__card:nth-child(3){
+    display: flex;
+  }
+}
