@@ -221,7 +221,7 @@
               <div class="cards__item-title name">BESTSELLER</div>
               <div class="cards__item-price">14 500 руб.</div>
               <div class="cards__item-number">БУКЕТ N076</div>
-              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+              <button id="basket" class="cards__item-link sectioncards__btn">В КОРЗИНУ</button>
             </div>
             <div class="bouquets__cards-item sectioncards__cards-item">
               <div class="cards__item-img">
@@ -230,7 +230,7 @@
               <div class="cards__item-title name">BESTSELLER</div>
               <div class="cards__item-price">14 500 руб.</div>
               <div class="cards__item-number">БУКЕТ N076</div>
-              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+              <button id="basket" class="cards__item-link sectioncards__btn">В КОРЗИНУ</button>
             </div>
             <div class="bouquets__cards-item sectioncards__cards-item">
               <div class="cards__item-img">
@@ -239,7 +239,7 @@
               <div class="cards__item-title name">BESTSELLER</div>
               <div class="cards__item-price">14 500 руб.</div>
               <div class="cards__item-number">БУКЕТ N076</div>
-              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+              <button id="basket" class="cards__item-link sectioncards__btn">В КОРЗИНУ</button>
             </div>
           </div>
           <div class="bouquets__card sectioncards__cards">
@@ -250,7 +250,7 @@
               <div class="cards__item-title name">BESTSELLER</div>
               <div class="cards__item-price">24 500 руб.</div>
               <div class="cards__item-number">БУКЕТ N076</div>
-              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+              <button id="basket" class="cards__item-link sectioncards__btn">В КОРЗИНУ</button>
             </div>
             <div class="bouquets__cards-item sectioncards__cards-item">
               <div class="cards__item-img">
@@ -259,7 +259,7 @@
               <div class="cards__item-title name">BESTSELLER</div>
               <div class="cards__item-price">24 500 руб.</div>
               <div class="cards__item-number">БУКЕТ N076</div>
-              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+              <button id="basket" class="cards__item-link sectioncards__btn">В КОРЗИНУ</button>
             </div>
             <div class="bouquets__cards-item sectioncards__cards-item">
               <div class="cards__item-img">
@@ -268,7 +268,7 @@
               <div class="cards__item-title name">BESTSELLER</div>
               <div class="cards__item-price">24 500 руб.</div>
               <div class="cards__item-number">БУКЕТ N076</div>
-              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+              <button id="basket" class="cards__item-link sectioncards__btn">В КОРЗИНУ</button>
             </div>
           </div>
           <div class="bouquets__card sectioncards__cards">
@@ -279,7 +279,7 @@
               <div class="cards__item-title name">BESTSELLER</div>
               <div class="cards__item-price">44 000 руб.</div>
               <div class="cards__item-number">БУКЕТ N076</div>
-              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+              <button id="basket" class="cards__item-link sectioncards__btn">В КОРЗИНУ</button>
             </div>
             <div class="bouquets__cards-item sectioncards__cards-item">
               <div class="cards__item-img">
@@ -288,7 +288,7 @@
               <div class="cards__item-title name">BESTSELLER</div>
               <div class="cards__item-price">44 000 руб.</div>
               <div class="cards__item-number">БУКЕТ N076</div>
-              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+              <button id="basket" class="cards__item-link sectioncards__btn">В КОРЗИНУ</button>
             </div>
             <div class="bouquets__cards-item sectioncards__cards-item">
               <div class="cards__item-img">
@@ -297,7 +297,7 @@
               <div class="cards__item-title name">BESTSELLER</div>
               <div class="cards__item-price">44 000 руб.</div>
               <div class="cards__item-number">БУКЕТ N076</div>
-              <a href="#" class="cards__item-link sectioncards__btn">В КОРЗИНУ</a>
+              <button id="basket" class="cards__item-link sectioncards__btn">В КОРЗИНУ</button>
             </div>
           </div>
         </div>
@@ -538,9 +538,40 @@
     </div>
   </footer>
 
+  <div class="modal hide">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <div class="modal__close-mobile" data-close>
+          <img src="images/close.svg" alt="">
+        </div>
+        <div class="modal__close-desktop" data-close>&times;</div>
+        <div class="modal__title">Товар добавлен в корзину</div>
+        <div class="modal__contents">
+          <div class="modal__contents-img">
+            <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
+          </div>
+          <div class="modal__contents-product">
+            <div class="modal__contents-product__name">БУКЕТ №093</div>
+            <div class="modal__contents-product__price">20 800 РУБ.</div>
+          </div>
+          <div class="modal__contents-counter">
+            <div class="counter">
+              <button>-</button>
+              2
+              <button>+</button>
+            </div>
+          </div>
+          <div class="modal__contents-total">41 600 руб.</div>
+        </div>
+        <button class="modal__btn">Перейти в корзину</button>
+      </div>
+    </div>
+  </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
   <script src="js/main.min.js" defer></script>
+  <script src="js/modal.min.js" defer></script>
 </body>
 
 </html>
