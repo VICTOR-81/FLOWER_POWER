@@ -146,14 +146,38 @@
     <div class="container">
       <div class="basket__title">КОРЗИНА</div>
       <div class="basket__wrapper">
-        <a href="" class="buyasguest">Продолжить покупку как гость</a>
+        <a href="#" class="buyasguest">Продолжить покупку как гость</a>
         <div class="or">ИЛИ</div>
         <div class="basket__wrapper-account">
           <div class="basket__wrapper-account__user">
-            
+            <div class="account__user-title">У МЕНЯ ЕСТЬ АККАУНТ:</div>
+            <form action="">
+              <label for="">Email<input type="text" placeholder="Placeholder text"></label>
+              <label for="">Пароль<input type="text" placeholder="Placeholder text"></label>
+              <button>Восстановить пароль</button>
+              <button>Войти</button>
+            </form>
           </div>
-          <div class="basket__wrapper-account__create"></div>
+          <div class="basket__wrapper-account__create">
+            <div class="account__create-title">СОЗДАТЬ АККАУНТ</div>
+            <form action="">
+              <label for="">Имя<input type="text" placeholder="Placeholder text"></label>
+              <label for="">Email<input type="text" placeholder="Placeholder text"></label>
+              <label for="">Пароль<input type="text" placeholder="Placeholder text">
+                <span>Минимум 8 знаков, включая цифры и буквы</span>
+              </label>
+              <label for="">Подтвердите пароль<input type="text" placeholder="Placeholder text">
+              <span>Пароли должны совпадать</span>
+              </label>
+              <button>Регистрация</button>
+            </form>
+          </div>
         </div>
+      </div>
+      <div class="basket__text">
+        Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни
+        уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард
+        МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в
       </div>
     </div>
   </section>
@@ -259,6 +283,36 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal hide">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <div class="modal__close-mobile" data-close>
+          <img src="images/close.svg" alt="">
+        </div>
+        <div class="modal__close-desktop" data-close>&times;</div>
+        <div class="modal__title">Товар добавлен в корзину</div>
+        <div class="modal__contents">
+          <div class="modal__contents-img">
+            <img src="https://flowerpower.ru/upload/iblock/86b/86bb3ccaee826412e615003637e79d37.jpg" alt="">
+          </div>
+          <div class="modal__contents-product">
+            <div class="modal__contents-product__name">БУКЕТ №093</div>
+            <div class="modal__contents-product__price">20 800 РУБ.</div>
+          </div>
+          <div class="modal__contents-counter">
+            <div class="counter">
+              <button>-</button>
+              2
+              <button>+</button>
+            </div>
+          </div>
+          <div class="modal__contents-total">41 600 руб.</div>
+        </div>
+        <button id="inbasket" class="modal__btn">Перейти в корзину</button>
+      </div>
+    </div>
+  </div>
 
   <div class="modal__basket hide">
     <div class="modal__dialog">
