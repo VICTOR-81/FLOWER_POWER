@@ -142,7 +142,7 @@
     </div>
   </header>
 
-  <section class="basket payment">
+  <section class="basket payment paymentjf">
     <div class="container">
       <div class="basket__title">КОРЗИНА</div>
       <div class="basket__wrapper">
@@ -157,25 +157,36 @@
             Юридическое лицо
           </label>
           <div class="input__wrapper">
-            <label for="">Имя заказчика<input type="text" placeholder="Placeholder text"></label>
-            <label for="">Телефон заказчика<input type="text" placeholder="Placeholder text"></label>
+            <label for="">Наименование компании<input type="text" placeholder="Placeholder text"></label>
+            <label for="">Телефон компании<input type="text" placeholder="Placeholder text"></label>
           </div>
-          <label for="">E-mail заказчика<input type="text" placeholder="Placeholder text"></label>
-          <label for="">
-            <input type="radio" name="pay" id="">
-            Банковской картой.<a href="#">Подробнее</a>
+          <div class="input__wrapper">
+            <label for="">E-mail<input type="text" placeholder="Placeholder text"></label>
+            <label for="">Имя и Фамилия оформителя<input type="text" placeholder="Placeholder text"></label>
+          </div>
+          <label class="label textarea" for="">
+            Адрес компании
+            <textarea type="text" placeholder="Placeholder text"></textarea>
           </label>
+          <div class="input__wrapper">
+            <label for="">ИНН<input type="text" placeholder="Placeholder text"></label>
+            <label for="">КПП<input type="text" placeholder="Placeholder text"></label>
+          </div>
+          <div class="input__wrapper">
+            <label for="">Название Банка<input type="text" placeholder="Placeholder text"></label>
+            <label for="">БИК<input type="text" placeholder="Placeholder text"></label>
+          </div>
+          <div class="input__wrapper">
+            <label for="">Корр. счет<input type="text" placeholder="Placeholder text"></label>
+            <label for="">Расчетный счет<input type="text" placeholder="Placeholder text"></label>
+          </div>
           <label for="">
             <input type="radio" name="pay" id="">
-            Яндекс.Деньги
+            Безналичный расчет
           </label>
           <label for="">
             <input type="radio" name="pay" id="">
             PayPal. Оплата PayPal возможна только из-за границы
-          </label>
-          <label for="">
-            <input type="radio" name="pay" id="">
-            Наличный расчет
           </label>
           <div class="payment__delivery-title">ДОСТАВКА:</div>
           <label for="">
@@ -187,16 +198,16 @@
             <span>Курьером по в пределах МКАД, <b>600 руб.</b></span>
           </label>
           <label for="">
+            <input type="radio" name="delivery" id="">
+            <span>Курьером по в пределах МКАД, <b>600 руб.</b></span>
+          </label>
+          <label for="">
+            <input type="radio" name="delivery" id="">
+            <span>Курьером по в пределах МКАД, <b>600 руб.</b></span>
+          </label>
+          <label for="">
             <input type="checkbox" name="" id="">
             Заказчик является получателем:
-          </label>
-          <div class="input__wrapper">
-            <label for="">Имя получателя<input type="text" placeholder="Placeholder text"></label>
-            <label for="">Телефон получателя<input type="text" placeholder="Placeholder text"></label>
-          </div>
-          <label for="">
-            Адрес
-            <textarea type="text" placeholder="Placeholder text"></textarea>
           </label>
           <div class="input__wrapper">
             <label for="">Дата доставки<input type="text" placeholder="Placeholder text"></label>
