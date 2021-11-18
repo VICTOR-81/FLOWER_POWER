@@ -1,0 +1,107 @@
+.basket{
+  padding-top: 40px;
+  padding-bottom: 110px;
+  &__title{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 20px 0;
+    display: none;
+  }
+  &__wrapper{
+    &-account{
+      padding-bottom: 110px;
+      text-align: left;
+      &__user,
+      &__create{
+        padding-top: 60px;
+        max-width: 400px;
+      }
+      label{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        letter-spacing: 0.14px;
+        font-size: 18px;
+        line-height: 24px;
+        display: block;
+        span{
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0px;
+        }
+      }
+      // input{
+      //   display: block;
+      //   margin-top: 10px;
+      //   padding: 12px 14px;
+      //   width: 100%;
+      //   font-weight: 300;
+      //   font-size: 20px;
+      //   line-height: 24px;
+      //   font-family: 'Exo 2', sans-serif;
+      //   &::placeholder{
+      //     color: #2F2F2F;
+      //     font-weight: 300;
+      //     font-size: 20px;
+      //     line-height: 24px;
+      //     font-family: 'Exo 2', sans-serif;
+      //   }
+      // }
+      button{
+        margin-top: 30px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: 'Exo 2', sans-serif;
+        background-color: #efefef;
+        display: block;
+      }
+      &__user{
+        button:nth-child(3){
+          letter-spacing: 0.13px;
+          text-decoration: underline;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+          padding: 0;
+          border: none;
+          margin-top: 0;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  &__text{
+    letter-spacing: 0.13px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.buyasguest{
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #707070;
+  background-color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+.or{
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+  display: none;
+}
+.account__user-title,
+.account__create-title{
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+}

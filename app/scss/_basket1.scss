@@ -1,0 +1,172 @@
+.promo{
+  padding-top: 0;
+  .container{
+    padding: 0;
+  }
+  .modal__contents-product__price.promo{
+    display: none;
+  }
+  .basket__wrapper{
+    padding-top: 10px;
+  }
+  .modal__contents{
+    margin-bottom: 0;
+    border-bottom: none;
+    align-items: start;
+  }
+  .modal__contents-product{
+    padding-left: 46px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: url(../images/close.svg);
+      left: 0;
+      top: -3px;
+      cursor: pointer;
+    }
+  }
+  .modal__contents-total{
+    padding-right: 20px;
+  }
+  .modal__contents-product__price{
+    display: block;
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 0.13px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5D5D5D;
+    text-transform: none;
+    span{
+      margin-left: 12px;
+      font-weight: 500;
+    }
+  }
+  label{
+    div{
+      text-align: left;
+      display: flex;
+      button{
+        padding: 12px 0;
+        max-width: 225px;
+        width: 100%;
+      }
+    }
+    span{
+      display: block;
+      text-align: left;
+      padding-left: 15px;
+    }
+    button{
+      margin: 0;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0px;
+      font-weight: 300;
+      font-family: 'Exo 2', sans-serif;
+      margin-left: -5px;
+    }
+    span:nth-child(1){
+      margin-top: 45px;
+      margin-bottom: 22px;
+      color: #2F2F2F;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    span:nth-child(3){
+      color: #00A24B;
+      padding-top: 8px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    span:nth-child(4){
+      color: #FF004E;
+      padding-top: 8px;
+      font-size: 16px;
+      line-height: 19px;
+      display: none;
+    }
+  }
+  input{
+    display: inline-block;
+    width: 130px;
+    padding: 12px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    color: #1A1A1A;
+    font-family: 'Exo 2', sans-serif;
+    border-width: 1px;
+    &::placeholder{
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0px;
+      font-weight: 300;
+      color: #1A1A1A;
+      font-family: 'Exo 2', sans-serif;
+    }
+  }
+  .input__desktop{
+    display: none;
+  }
+  .input__mobile{
+    margin-left: 15px;
+  }
+  .total__price-price{
+    display: none;
+  }
+  .promo__price{
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-right: 20px;
+    div:nth-child(1){
+      color: #1A1A1A;
+      text-transform: uppercase;
+      letter-spacing: 0px;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      text-decoration: line-through;
+    }
+    div:nth-child(2){
+      color: #1A1A1A;
+      text-transform: uppercase;
+      letter-spacing: 0px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      margin-top: 20px;
+    }
+  }
+  .btn__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    button:nth-child(2){
+      display: none;
+    }
+    button:nth-child(1){
+      padding: 0;
+      margin: 0;
+      border: none;
+      background-color: transparent;
+      margin-left: 15px;
+      text-decoration: underline;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0px;
+      font-family: 'Exo 2', sans-serif;
+    }
+    button:nth-child(3){
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0px;
+      font-family: 'Exo 2', sans-serif
+    }
+  }
+}

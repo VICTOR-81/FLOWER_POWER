@@ -1,0 +1,277 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #F7F7F7;
+  text-align: center;
+  font-family: 'Exo 2', sans-serif;
+  color: #1A1A1A;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container{
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.container__fluid{
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+button{
+  padding: 12px 60px;
+  border: 1px solid #707070;
+  background-color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  transition: all .5s;
+}
+button:hover{
+  border: 1px solid #F7F7F7;
+  background-color: #D3D3D3;
+  cursor: pointer;
+  transition: all .5s;
+}
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.sectioncards{
+  &__title{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+  }
+  &__cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    &-item{
+      max-width: 344px;
+      width: 100%;
+      background-color: #fff;
+    }
+  }
+  &__btn{
+    padding: 9px 30px;
+    border: 1px solid #707070;
+    background-color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    color: #1A1A1A;
+    margin-bottom: 28px;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    transition: all .5s;
+    &:hover{
+      background-color: #EFEFEF;
+      border: 1px solid #1A1A1A;
+      transition: all .5s;
+    }
+  }
+}
+.cards__item{
+  &-img{
+    width: 100%;
+    height: 359px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    & img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &-title{
+  margin-bottom: 39px;
+  }
+  &-price,
+  &-part{
+    margin-bottom: 17px;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.19px;
+  }
+  &-number,
+  &-fromprice{
+    margin-bottom: 29px;
+    color: #5D5D5D;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1px;
+  }
+}
+.name{
+  color: #5D5D5D;
+  text-transform: uppercase;
+  font-size: 8px;
+  line-height: 10px;
+  letter-spacing: 0.06px;
+}
+.active{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.close{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+hr{
+  background-color: #EDEDED;
+  margin: 0;
+  height: 1px;
+  border: none;
+}
+.slick-dots{
+  margin: 0 auto;
+  padding-top: 20px;
+  button{
+    padding: 0;
+    font-size: 0;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #CECECE;
+    border: none;
+  }
+  li{
+    display: inline;
+  }
+  li + li{
+    margin-left: 10px;
+  }
+  .slick-active button{
+    background-color: #707070;
+  }
+}
+.insta{
+  width: 21px;
+  height: 21px;
+}
+.fb{
+  width: 10px;
+  height: 20px;
+}
+.pin{
+  width: 21px;
+  height: 26px;
+}
+.wapp{
+  width: 21px;
+  height: 21px;
+}
+.header__menu .link__active,
+.product .link__active{
+  font-weight: 500;
+  text-decoration: underline;
+}
+.pagination{
+  text-align: left;
+  margin-left: 8px;
+  margin-bottom: 65px;
+  display: none;
+  &__arrow,
+  ul,
+  li,
+  a,
+  div{
+    display: inline-block;
+  }
+  ul{
+    padding: 0;
+  }
+  &__arrow-left{
+    padding-right: 33px;
+  }
+  &__arrow-right{
+    padding-left: 33px;
+  }
+  &__arrow-left.hide,
+  &__arrow-right.hide,
+  &__dots.hide,
+  &__number.hide{
+    display: none;
+  }
+  &__dots.show{
+    display: inline-block;
+  }
+  a,
+  &__dots{
+    padding: 7px 13px;
+    letter-spacing: 0.13px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5D5D5D;
+  }
+  a.active{
+    padding: 7px 13px;
+    background-color: #E5E5E5;
+  }
+}
+input{
+  display: block;
+  margin-top: 10px;
+  padding: 12px 14px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Exo 2', sans-serif;
+  &::placeholder{
+    color: #2F2F2F;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Exo 2', sans-serif;
+  }
+}
+textarea{
+  display: block;
+  margin-top: 10px;
+  padding: 12px 14px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Exo 2', sans-serif;
+  height: 160px;
+  &::placeholder{
+    color: #2F2F2F;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Exo 2', sans-serif;
+  }
+}

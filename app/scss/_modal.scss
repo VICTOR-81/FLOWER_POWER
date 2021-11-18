@@ -1,0 +1,166 @@
+.modal,
+.modal__basket {
+    position: fixed;
+    top: 0;
+    left: 0;
+    left: 0;
+    right: 0;
+    padding-top: 20px;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+}
+.modal__content {
+    position: relative;
+    padding: 80px 20px 92px;
+    background-color: #fff;
+    border: 1px solid #707070;
+    // width: 375px;
+}
+.modal__close-mobile,
+.modal__close-desktop{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.modal__close-mobile{
+  top: 0;
+  right: 0;
+}
+.modal__close-desktop{
+  top: 25px;
+  right: 25px;
+  font-size: 70px;
+  font-weight: 300;
+  line-height: 0px;
+  color: #000;
+  display: none;
+}
+.modal__title {
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+    margin-bottom: 43px;
+}
+.modal__contents{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  padding-top: 29px;
+  padding-bottom: 43px;
+  border-top: 1px dashed #707070;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 53px;
+  &-img{
+    width: 138px;
+    height: 180px;
+    display: none;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  &-product__name{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &-product__price{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    display: none;
+  }
+  &-counter{
+    display: none;
+  }
+  &-total{
+    font-family: "Exo 2",sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+  }
+}
+.modal__btn{
+  border: 1px solid #707070;
+  background-color: #fff;
+  padding: 12px 0;
+  max-width: 296px;
+  width: 100%;
+  font-family: "Exo 2",sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+.show {
+    display: flex;
+}
+.hide {
+    display: none;
+}
+
+.modal__basket{
+  .modal__contents{
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    align-items: start;
+  }
+  .modal__contents-total{
+    padding-top: 10px;
+  }
+  .modal__contents-product__price{
+    display: block;
+    letter-spacing: 0.13px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    color: #5D5D5D;
+    font-family: "Exo 2",sans-serif;
+    padding-top: 10px;
+    padding-bottom: 22px;
+    text-transform: none;
+    span{
+      margin-left: 19px;
+      font-weight: 600;
+    }
+  }
+  .modal__content{
+    padding-bottom: 38px;
+  }
+  .modal__btn{
+    margin-top: 45px;
+  }
+}
+.total__price{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-top: 1px solid #707070;
+  display: flex;
+  justify-content: end;
+  &-text{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    display: none;
+  }
+  &-price{
+    font-family: "Exo 2",sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+  }
+}

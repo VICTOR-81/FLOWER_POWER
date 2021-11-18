@@ -4,7 +4,7 @@
 .vs
 
 node_modules/
-app/
+# app/
 # gulpfile.js
 # package-lock.json
 # package.json
